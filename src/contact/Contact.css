@@ -1,0 +1,31 @@
+.contact-wrapper{
+    min-height: 76vh;
+    width: 100%;
+    background-color:  rgb(223, 197, 163);
+    background-size:100% 110%;
+    background-repeat: no-repeat;
+    background-position-x: center; 
+}
+
+.contact-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-content form input{
+    width: 250px;
+    height: 1.5em;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.contact-content form textarea{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 20px;
+    resize: none;
+}
