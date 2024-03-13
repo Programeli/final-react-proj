@@ -1,0 +1,28 @@
+.home-wrapper{
+    min-height: 76vh;
+    width: 100%;
+    background-image: url('../../public/assets/coffee-bg.jpg');   
+    background-size:100% 110%;
+    background-repeat: no-repeat;
+    background-position-x: center; 
+   
+}
+
+.home-content{
+    color: rgba(255, 255, 255, 0.904);
+    margin-top: 10vh;
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
+}
+
+.p-wrapper{
+    margin-top: 22vh;
+    font-size: 2em;
+}
+
+
+

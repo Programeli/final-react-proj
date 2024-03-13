@@ -1,0 +1,31 @@
+.footer-wrapper{
+
+    width: 100%;
+    height: 16vh;
+    background-color: rgb(22, 22, 22);
+    bottom: 0;
+    left: 0;
+    position:static;
+    color: rgb(223, 197, 163);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 18px;
+    margin-top: auto;
+}
+
+.left{
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.mid{
+    text-align: center;
+}
+
+.right{
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 50px;
+    gap: 20px;
+}

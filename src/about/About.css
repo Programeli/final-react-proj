@@ -1,0 +1,45 @@
+.about-wrapper{
+    min-height: 76vh;
+    width: 100%;
+    background-image: url('../../public/assets/coffe-machine.jpg');   
+    background-size:100% 110%;
+    background-repeat: no-repeat;
+    background-position-x: center; 
+    background-attachment: fixed;    
+}
+
+.about-textarea{
+    color: rgba(255, 255, 255, 0.904);
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgba(6, 6, 6, 0.606);
+    border: 2px solid rgb(156, 156, 156);
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+.about-content-pre{
+    font-size: 24px;
+    margin-top: 50px;
+    text-wrap:wrap;
+    width: 80%;
+    margin-left: 15%;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.about-images{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.about-images img{
+    width: 30%;
+    height: 450px;
+    border-bottom: 5px dashed  rgb(159, 159, 159);
+    padding-bottom: 15px;
+}
