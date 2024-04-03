@@ -1,0 +1,95 @@
+.register-wrapper{
+    min-height: 76vh;
+    width: 100%;
+    background-color: rgb(52, 52, 52);
+  
+   
+}
+
+.register-logo{
+    height: 60vh;
+    width: 100%;
+    background-image: url('../../public/assets/caffe-menu.jpg');   
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.register-content{
+    color: rgba(255, 255, 255, 0.904);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.form-wrapper{ 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 80px 70px;
+    background-color: rgba(0, 0, 0, 0.306);
+    border-radius: 5%;
+    margin-bottom: 200px;
+}
+
+.form-wrapper form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form-wrapper form input{
+    width: 250px;
+    height: 1.5em;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-wrapper form div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.register-content form button{
+    width: 80px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.register-content form button:hover{
+    background-color: rgb(247, 238, 228);
+    font-weight: bold;
+}
+
+.login-text{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.login-link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+
+}
+
+.login-link:hover{
+    color: rgb(223, 197, 163);
+    border-bottom: 2px solid rgb(223, 197, 163);
+}

@@ -10,7 +10,7 @@ export default function Header():JSX.Element{
         <div className='header-wrapper'>
 
            <div className='nav'>
-
+                
                 <Link to={'/home'} className='link'>Home</Link>
                 <Link to={'/about'} className='link'>About Us</Link>
                 <Link to={'/contact'} className='link'>Contact</Link>
@@ -20,14 +20,14 @@ export default function Header():JSX.Element{
            
            <div className='logo'>
 
-                <h3>Logo</h3>
+                <img className='logo-img' src="/assets/caffe-logo-ico.ico" alt="logo" />
 
            </div>
 
 
             <div className='loginregister'>
 
-                <Link to={'/login'} className='link'>Login</Link>
+                <Link to={'/log-in'} className='link'>Login</Link>
                 <Link to={'/register'} className='link'>Register</Link>
 
             </div>

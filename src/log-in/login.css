@@ -1,0 +1,101 @@
+.login-wrapper{
+    min-height: 76vh;
+    width: 100%;
+    background-color: rgb(52, 52, 52);
+  
+   
+}
+
+.login-logo{
+    height: 60vh;
+    width: 100%;
+    background-image: url('../../public/assets/open-sign.jpg');   
+    background-size:100% 100%; 
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 40px;
+}
+
+.login-content{
+    color: rgba(255, 255, 255, 0.904);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{ 
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 80px 70px;
+    background-color: rgba(0, 0, 0, 0.306);
+    border-radius: 5%;
+    margin-bottom: 200px;
+}
+
+.form-wrapper form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form-wrapper form input{
+    width: 250px;
+    height: 1.5em;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.login-content form button{
+    width: 80px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.login-content form button:hover{
+    background-color: rgb(247, 238, 228);
+    font-weight: bold;
+}
+
+.forgot-pass{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+}
+
+.forgot-pass:hover{
+    color: rgb(223, 197, 163);
+    border-bottom: 2px solid rgb(223, 197, 163);
+}
+
+.register-text{
+    color: white;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.register-link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+
+}
+
+.register-link:hover{
+    color: rgb(223, 197, 163);
+    border-bottom: 2px solid rgb(223, 197, 163);
+}

@@ -34,8 +34,9 @@
     border-bottom: 2px solid rgb(247, 238, 228);
 }
 
-.logo{
-    text-align: center;
+.logo-img{
+    height: 8vh;
+    width: 12vh;
 }
 
 .loginregister{

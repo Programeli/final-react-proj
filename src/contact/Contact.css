@@ -1,18 +1,24 @@
 .contact-wrapper{
     min-height: 76vh;
     width: 100%;
-    background-color:  rgb(223, 197, 163);
+    background-color:  rgb(192, 160, 118);
     background-size:100% 110%;
     background-repeat: no-repeat;
     background-position-x: center; 
+    display: flex;
+    justify-content: center;
 }
 
 .contact-content form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
+    border: 2px solid black;
+    padding: 50px 40px;
+    background-color: rgba(0, 0, 0, 0.306);
+    border-radius: 5%;
 }
 
 .contact-content form input{
@@ -28,4 +34,17 @@
     padding: 10px;
     font-size: 20px;
     resize: none;
+}
+
+.contact-content form button{
+    width: 80px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-content form button:hover{
+    background-color: rgb(247, 238, 228);
+    font-weight: bold;
 }
