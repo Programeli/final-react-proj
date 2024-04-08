@@ -25,9 +25,11 @@ export default function Register():JSX.Element {
     try {
 
       // Make a POST request to your server's signup endpoint
-      const response = await axios.post('http://localhost:3001/api/register', formData );
+      const response = await axios.post('http://localhost:3001/register', formData );
       // Handle the response from the server
       console.log(response.data);
+      alert('Registration successful!');
+      window.location.href = "/log-in";
     } catch (error) {
       // Handle errors
       console.error('Error during registration:', error);
