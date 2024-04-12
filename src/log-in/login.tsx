@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './login.css';
 
@@ -17,6 +17,8 @@ export default function Login(): JSX.Element {
         });
     };
 
+    axios.defaults.withCredentials = true; // Added this line to enable cookies!!!!!
+
     const handleLoginSubmit = async (e) => {
         e.preventDefault();
 
@@ -32,6 +34,7 @@ export default function Login(): JSX.Element {
             // Handle the response from the server
             console.log(response.data);
             alert('Login successful!');
+            localStorage.setItem('isLoggedIn', 'true');
             window.location.href = "/";
         } catch (error) {
             // Handle errors
@@ -39,6 +42,14 @@ export default function Login(): JSX.Element {
             setError('Invalid username or password. Please try again.');
         }
     };
+
+    useEffect(() => {
+        const loggedIn = localStorage.getItem('isLoggedIn');
+        if (loggedIn === 'true') {
+            // Redirect to home page if already logged in
+            window.location.href = "/";
+        }
+    }, []);
 
     return(
         <div className="login-wrapper">

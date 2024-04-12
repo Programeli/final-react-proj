@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Header.css';
 
-export default function Header():JSX.Element{
+export default function Header({ isLoggedIn }: { isLoggedIn: boolean }):JSX.Element{
 
     return(
 
@@ -27,9 +27,17 @@ export default function Header():JSX.Element{
 
             <div className='loginregister'>
 
-                <Link to={'/log-in'} className='link'>Login</Link>
-                <Link to={'/register'} className='link'>Register</Link>
-
+                {isLoggedIn ? (
+                    <>
+                        <Link to={'/profile'} className='link'>Profile</Link>
+                        <Link to={'/logout'} className='link'>Logout</Link>
+                    </>
+                ) : (
+                    <>
+                        <Link to={'/log-in'} className='link'>Login</Link>
+                        <Link to={'/register'} className='link'>Register</Link>
+                    </>
+                )}
             </div>
 
         </div>
